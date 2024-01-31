@@ -1,24 +1,28 @@
-function Education() {
+import React from "react";
+import Input from "./Input";
+import styles from "../StyleSheets/Sections.module.css";
+import EducationSection from "./EducationSection";
+import Button from "./Button";
+const Education = ({
+  onInputChange,
+  educationData,
+  addEducation,
+  removeEducation,
+}) => {
   return (
-    <>
-      <label htmlFor="education">Education Level: </label>
-      <select type="select" id="education" placeholder="Jhon">
-        <option value="">-----------</option>
-        <option value="">Elementary</option>
-        <option value="">Highschool</option>
-        <option value="">2yr Graduate Degree </option>
-        <option value="">Graduate Degree</option>
-        <option value="">Masters Degree</option>
-        <option value="">Phd</option>
-      </select>
-      <label htmlFor="type">Graduation: </label>
-      <input type="text" id="type" placeholder="Smith" />
-      <label htmlFor="school">School: </label>
-      <input type="text" id="school" placeholder="" />
-      <label htmlFor="certificates">Certificates: </label>
-      <input type="text" id="certificates" placeholder="JhonSmith@gmail.com" />
-    </>
+    <div className={styles.subcontainer}>
+      <h4>Education</h4>
+      {educationData.map((e, i) => (
+        <EducationSection
+          onInputChange={onInputChange}
+          key={i}
+          index={i}
+          removeEducation={removeEducation}
+        />
+      ))}
+      <Button text="Add" onClickEvent={addEducation} />
+    </div>
   );
-}
+};
 
 export default Education;

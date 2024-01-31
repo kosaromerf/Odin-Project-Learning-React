@@ -1,0 +1,44 @@
+.divided {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    margin: 1%;
+    padding: 2%;
+
+    background-color: white;
+
+}
+
+.input {
+    border-right: 2px solid gray;
+
+
+}
+
+.output {
+    border-left: 2px solid gray;
+    padding-left: 5%;
+
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.footer {
+    background-color: rgb(81, 142, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 1rem;
+    font-weight: bolder;
+
+
+
+}
