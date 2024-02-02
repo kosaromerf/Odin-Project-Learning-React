@@ -1,0 +1,65 @@
+.options {
+    background-color: darkolivegreen;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 10vh;
+
+
+}
+
+
+.optButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 15%;
+    min-width: 70px;
+
+}
+
+
+.difButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 25%;
+    min-width: 125px;
+    gap: 5%;
+    align-content: space-evenly;
+}
+
+.increment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+
+
+}
+
+
+
+.increment * {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.difButtons button {
+
+    height: 2.5vh;
+    max-width: 7vw;
+
+
+
+}
+
+.increment button {
+    height: 2.5vh;
+    max-width: 3vw;
+
+
+}
