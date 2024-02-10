@@ -1,0 +1,87 @@
+.cardContainer {
+    height: 300px;
+    max-width: 300px;
+    min-width: 250px;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.images {
+    width: 100%;
+    height: 60%;
+
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.priceKg {
+    font-size: 0.9rem;
+}
+
+.inputContaier {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+
+}
+
+.inputField {
+    width: 50%;
+
+
+}
+
+.amount {
+    width: 50%;
+
+}
+
+
+.increaseBtn {
+    width: 20%;
+    background-color: rgb(22, 161, 22);
+    color: white;
+}
+
+
+.decreaseBtn {
+    width: 20%;
+    background-color: red;
+    color: white;
+}
+
+.add {
+    height: 2rem;
+    width: 70%;
+    background-color: greenyellow;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+
+
+/*         <div className={styles.cardContainer}>
+      <img src="" alt="" className={styles.images} />
+      <p className={styles.title}> Pul Biber</p>
+      <p className={styles.priceKg}> 120 TL/Kg</p>
+      <div className={styles.inputContaier}>
+        <div className={styles.amount}>
+          <input
+            type="number"
+            placeholder="100"
+            className={styles.inputField}
+          />
+          <button className={styles.increaseBtn}>+</button>
+          <button className={styles.decreaseBtn}>-</button>
+        </div>
+        <p className={styles.priceResult}>150Tl</p>
+      </div>
+      <button className={styles.add}>Add To Cart</button>
+    </div>*/
