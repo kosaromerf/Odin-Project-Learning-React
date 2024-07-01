@@ -1,22 +1,23 @@
 import logo from "../assets/logo.jpeg";
 import styles from "../Styles/Header.module.css";
 import React from "react";
-import Button from "./Button";
 import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
 
 const Header = () => {
   return (
-    <div className={styles.page}>
-      <Link to="/" className={styles.link}>
-        <img src={logo} alt="logo Kosar Baharat" className={styles.logo} />
+    <header className={styles.main}>
+      <Link to="/">
+        <img
+          src={logo}
+          alt="logo"
+          width={80}
+          height={45}
+          className={styles.logo}
+        />
       </Link>
-
-      <nav className={styles.navbar}>
-        <Button text="/About" />
-        <Button text="/Products" />
-        <Button text="/Contact" />
-      </nav>
-    </div>
+      <NavBar />
+    </header>
   );
 };
 

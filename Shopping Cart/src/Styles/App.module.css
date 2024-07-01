@@ -1,28 +1,35 @@
 .page {
-    background-image: url("../assets/background.jpg");
-    width: 100%;
+    background-image: url("../assets/backgroundFlip.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 3.5rem;
+    font-size: 1rem;
     gap: 7vw;
     color: wheat;
     font-weight: 900;
-    text-shadow: 10px red;
+
 }
 
 .page * {
     color: rgb(120, 159, 243);
     text-decoration: none;
     text-shadow: 10px 10px 5px black;
-    font-family: Georgia, 'Times New Roman', Times, serif
+
 }
 
-.header {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
+
+@media only screen and (min-width: 767px) {
+
+    .page {
+        background-image: url("../assets/background.jpg");
+
+
+    }
+
 }
